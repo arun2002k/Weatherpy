@@ -16,4 +16,5 @@ response = requests.get(
 )
 
 weather_data = response.json()
+# weather qualities like humidity, Moisture, cloud, rainfall etc can be printed here only temperature is printed.
 print(city, "temperature is", weather_data['main']['temp'], "°c")
